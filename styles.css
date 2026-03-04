@@ -1,0 +1,104 @@
+:root {
+  color-scheme: light;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --text: #0f172a;
+  --muted: #475569;
+  --line: #e2e8f0;
+  --accent: #0ea5e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  width: min(960px, calc(100% - 2rem));
+  margin: 0 auto;
+}
+
+.hero {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #fff;
+  padding: 5rem 0 4rem;
+}
+
+.eyebrow {
+  margin: 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #cbd5e1;
+  font-size: 0.8rem;
+}
+
+h1 {
+  margin: 0.5rem 0 0;
+  font-size: clamp(2rem, 3vw, 3rem);
+}
+
+.lead {
+  margin-top: 1rem;
+  max-width: 56ch;
+  color: #e2e8f0;
+}
+
+.section {
+  padding: 3rem 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  color: var(--muted);
+}
+
+.cards {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.2rem;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.contact-link a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.contact-link a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  background: #fff;
+}
+
+.footer-inner {
+  padding: 1.5rem 0;
+  color: var(--muted);
+}
